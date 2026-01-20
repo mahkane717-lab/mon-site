@@ -1,0 +1,295 @@
+header, nav, .hero, .films, .reservation, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+header {
+    background: linear-gradient(to right, #b91c1c, #7c2d12);
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: #020617;
+    padding: 15px;
+}
+
+nav a {
+    color: #facc15;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba') center/cover;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #dc2626;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #991b1b;
+}
+
+.films {
+    padding: 50px;
+    text-align: center;
+}
+
+.films h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.film-card {
+    background: #020617;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.film-card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background: #facc15;
+    cursor: pointer;
+}
+
+.action { border-left: 5px solid #dc2626; }
+.amour { border-left: 5px solid #ec4899; }
+.comique { border-left: 5px solid #22c55e; }
+.tragique { border-left: 5px solid #6366f1; }
+
+
+.reservation {
+    background: #020617;
+    padding: 40px;
+    text-align: center;
+}
+
+.reservation form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.reservation input,
+.reservation select {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.reservation button {
+    background: #dc2626;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: hsl(229, 84%, 5%);
+    color: #94a3b8;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #e50914;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.categories a {
+  padding: 10px 15px;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.film {
+  display: none;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.film img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.film:target {
+  display: block;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: apparition 1s ease forwards;
+}
+
+@keyframes apparition {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.film {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.film:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+.bounce {
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+reservation-success {
+    animation: zoom 1s ease;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid white;
+    border-top: 6px solid red;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid white;
+    border-top: 6px solid red;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.film {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .film {
+        width: 90%;
+        margin: auto;
+    }
+
+    .recherche input {
+        width: 90%;
+    }
+}
+    

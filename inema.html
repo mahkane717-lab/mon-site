@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html <!lang="fr">
+<head>
+
+
+    <meta charset="UTF-8">
+    <title>CinéVision</title>
+    <link rel="stylesheet" href="cinema.css">
+    <script src="script1.js"></script>
+
+</head>
+<body>
+DOCTYPE html>
+
+<header>
+    <h1>🎬 CinéVision</h1>
+    <p>Vivez le cinéma autrement</p>
+</header>
+
+<section class="hero fade-in">
+<section class="recherche fade-in">
+<section id="films" class="fade-in">
+
+<nav>
+    <a href="#">Accueil</a>
+    <a href="#films">Films</a>
+    <a href="#reservation">Réservation</a>
+    <a href="#contact">Contact</a>
+    <a href="#films" class="btn">voir les films</a>
+</nav>
+
+<section class="hero">
+    <h2>Les meilleurs films du moment</h2>
+    <p>Action • Amour • Comique • Tragique</p>
+</section>
+<section class="recherche">
+    <h2>🔍 Rechercher un film</h2>
+    <input type="text" id="filmInput" placeholder="Entrez le nom du film">
+    <button onclick="rechercherFilm()">Rechercher</button>
+    <p id="resultat"></p>
+</section>
+
+<section id="films" class="films">
+    <h2>🎞️ Nos catégories</h2>
+
+    <div class="film-card action">
+        <h3>🔥 Action</h3>
+        <p>Adrénaline, suspense et combats intenses.</p>
+        <
+    </div>
+
+    <div class="film-card amour">
+        <h3>❤️ Amour</h3>
+        <p>Romance, émotions et belles histoires.</p>
+        
+    </div>
+
+    <div class="film-card comique">
+        <h3>😂 Comique</h3>
+        <p>Rires garantis pour toute la famille.</p>
+        
+    </div>
+
+    <div class="film-card tragique">
+        <h3>🎭 Tragique</h3>
+        <p>Histoires profondes et marquantes.</p>
+        
+    </div>
+
+    <div id="loader">
+    <div class="spinner"></div>
+    <audio id="clickSound">
+    <source src="click.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="rechercherFilm(); playSound()">Rechercher</button>
+
+</div>
+    <h3>categories</h3>
+
+    <div class="films">
+        <a href="action.html">
+        <img src="film1.png" alt="Affiche du film"> 
+        <img src="film1.1.png" alt="Affiche du film">
+        </a>
+        <p>Action</p>
+
+    <div class="films">
+        <a href="amour.html">
+        <img src="film2.png" alt="Affiche du film">
+        <img src="film2.1.png" alt="Affiche du film">
+        </a>
+        <p>Amour</p>
+        </div>
+        <div class="films">
+        <a href="tragique.html">
+        <img src="film3.png" alt="Affiche du film">
+        <img src="film3.1.png" alt="Affiche du film">
+        </a>
+        <p>Tragique</p>
+    </div>
+    <div class="films">
+        <a href="comique.html">
+        <img src="film4.png" alt="Affiche du film">
+        <img src="film4.1.png" alt="Affiche du film">
+        </a>
+        <p>Comique</p>
+    </div>
+
+</section>
+
+<section id="reservation" class="reservation">
+    <h4>🎟️ Réservation</h4>
+    <form>
+        <input type="text" placeholder="Nom complet" required>
+        <input type="email" placeholder="Email" required>
+        <select>
+            <option>Action</option>
+            <option>Amour</option>
+            <option>Comique</option>
+            <option>Tragique</option>
+        </select>
+        <input type="number" placeholder="Nombre de places" required>
+        <button type="submit">Réserver</button>
+    </form>
+</section>
+
+<footer id="contact">
+    <p>© 2025 CinéVision | Créé par Mah Kane</p>
+</footer>
+
+</body>
+</html>
